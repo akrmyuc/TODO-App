@@ -2,6 +2,30 @@ body {
   font-family: sans-serif;
 }
 
+input {
+  border-radius: 6px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  padding: 4px 16px;
+  margin-right: 4px;
+}
+
+button:hover {
+  background-color: turquoise;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  margin-right: 8px;
+}
+
 .input-area {
   background-color: #c1ffff;
   width: 400px;
@@ -27,4 +51,17 @@ body {
   padding: 8px;
   margin: 8px;
   border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 3px;
+  font-weight: bold;
+  color: #242424;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
 }
