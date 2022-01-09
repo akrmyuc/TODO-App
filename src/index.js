@@ -17,11 +17,17 @@ const onClickAdd = () => {
   // button(完了)タグを作成
   const completeBotton = document.createElement("button");
   completeBotton.innerText = "完了";
+  completeBotton.addEventListener("click", () => {
+    alert("完了");
+  });
 
   // button(削除)タグを作成
   const deleteBotton = document.createElement("button");
   deleteBotton.innerText = "削除";
   console.log(deleteBotton);
+  deleteBotton.addEventListener("click", () => {
+    alert("削除");
+  });
 
   // divタグの子要素に各要素を設定
   div.appendChild(li);
