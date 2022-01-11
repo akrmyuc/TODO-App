@@ -63,11 +63,6 @@ const onClickAdd = () => {
     deleteFromIncompletList(deleteBotton.parentNode);
   });
 
-  // 未完了リストから指定の要素を削除
-  const deleteFromIncompletList = (target) => {
-    document.getElementById("incomplete-list").removeChild(target);
-  };
-
   // divタグの子要素に各要素を設定
   div.appendChild(li);
   div.appendChild(completeBotton);
@@ -75,6 +70,14 @@ const onClickAdd = () => {
 
   // // 未完了のリストに追加
   document.getElementById("incomplete-list").appendChild(div);
+
+  // 未完了リストから指定の要素を削除
+  const deleteFromIncompletList = (target) => {
+    document.getElementById("incomplete-list").removeChild(target);
+  };
+
+  // 未完了リストに追加する関数
+  const createIncompletList = (text) => {};
 };
 
 document
